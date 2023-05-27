@@ -14,7 +14,7 @@ This project demonstrates the implementation of the YOLOv8 algorithm for detecti
 To use this project, follow these steps to set up the environment:
 
 1. Clone the repository: The source code for [YOLOv8](https://github.com/ultralytics/ultralytics) is publicly available on GitHub. 
-    ```python!git clone https://github.com/ultralytics/ultralytics.git```
+    ```!git clone https://github.com/ultralytics/ultralytics.git```
 2. Install the required dependencies: `pip install -r requirements.txt`
 ```python
 %cd ultralytics
