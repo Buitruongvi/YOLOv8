@@ -24,11 +24,8 @@ To use this project, follow these steps to set up the environment:
 import ultralytics
 ultralytics.checks()
 ```
+3. Download the pre-trained YOLOv8s weights: [YOLOv8s]([https://yolov8-weights-url](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8s.pt))
 
-
-
-4. Download the pre-trained YOLOv8 weights: [YOLOv8 Weights](https://yolov8-weights-url)
-5. Place the downloaded weights file in the `weights/` directory.
 
 ## Usage
 
