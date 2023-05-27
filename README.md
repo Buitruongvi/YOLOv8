@@ -17,7 +17,7 @@ To use this project, follow these steps to set up the environment:
 
 `!git clone https://github.com/ultralytics/ultralytics.git`
 
-2. Install the required dependencies: `pip install -r requirements.txt`
+2. Install the required requirement:
 ```python
 %cd ultralytics
 !pip install ultralytics
