@@ -18,15 +18,15 @@ To use this project, follow these steps to set up the environment:
 `!git clone https://github.com/ultralytics/ultralytics.git`
 
 2. Install the required requirement:
-```python
+`python
 %cd ultralytics
 !pip install ultralytics
 import ultralytics
 ultralytics.checks()
-```
+`
 3. Download the pre-trained YOLOv8s weights: [YOLOv8s](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8s.pt)
-```python
-!wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8s.pt```
+`python
+!wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8s.pt`
 
 ## Usage
 
