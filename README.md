@@ -35,12 +35,28 @@ After completing the preparation steps, we will proceed with training using the 
 ```python
 !yolo train model=yolov8s.pt data=./human_detection_dataset/data.yaml epochs=20 imgsz=640
 ```
-Check the ./runs directory, and you will find a file named ./detect/train. This file is the output of YOLOv8s.
+Check the **./runs** directory, and you will find a file named **./detect/train**. This file is the output of YOLOv8s.
 Here are the basic meanings of some of these parameters:
-- img: The size of the training images. The training and test images will be resized to the specified size, which is 640 by default. You can experiment with different image sizes.
-- batch: During the training process, models can either read the entire training data at once or divide it into batches for processing. The default value is 64, meaning the training data will be divided into batches of 64 samples. You can set different values according to 2^n (n ≥ 0).
+- **img**: The size of the training images. The training and test images will be resized to the specified size, which is 640 by default. You can experiment with different image sizes.
+- **batch**: During the training process, models can either read the entire training data at once or divide it into batches for processing. The default value is 64, meaning the training data will be divided into batches of 64 samples. You can set different values according to 2^n (n ≥ 0).
 epochs: The number of times the dataset is iterated during training.
-- data: Information about the dataset (in the .yaml file) you want to use for training.
-- weights: The file of the pretrained model to be used. You can download and use different pretrained model files from the provided list.
+- **data**: Information about the dataset (in the .yaml file) you want to use for training.
+- **weights**: The file of the pretrained model to be used. You can download and use different pretrained model files from the provided list.
+
+## Predict
+With uploaded image:
+```python
+from google.colab import files
+uploaded = files.upload()
+filename = next(iter(uploaded))
+print(f"Uploaded file: {filename}")
+
+!yolo predict model=./runs/detect/train/weights/best.pt source='image_path>'
+```
+With online image:
+```python
+!yolo predict model=/content/ultralytics/detect/train/weights/best.pt source='image_address'
+```
+
 
 # References
