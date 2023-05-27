@@ -25,7 +25,8 @@ import ultralytics
 ultralytics.checks()
 ```
 3. Download the pre-trained YOLOv8s weights: [YOLOv8s](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8s.pt)
-
+```python
+!wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8s.pt```
 
 ## Usage
 
